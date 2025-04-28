@@ -1,0 +1,363 @@
+.newHeader{
+    box-sizing: border-box;
+    color: #003553;
+    position: fixed;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .04), 
+            0 2px 6px rgba(0, 0, 0, .04), 
+            0 0 1px rgba(0, 0, 0, .04);
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 100;
+    background-color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.newHeader .newHeaderWrapper{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    max-width: 1344px;
+    margin: auto;
+}
+.newHeader .logoHeader{
+    width: 150px;
+    cursor: pointer;
+}
+
+.newHeader .styles_menu{
+    width: 100%;
+}
+
+.newHeader .styles_menu .styles_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.styles_header{
+    opacity: 1;
+    transform: none;
+    height: 79px;
+    padding: 12px 0px 12px 20px;
+}
+
+.newHeader .styles_menu .styles_header .styles_network{
+    display: flex;
+    align-items: center;
+}
+
+.newHeader .styles_menu .styles_header .styles_network>div{
+    padding: 0 12px;
+    position: relative;
+}
+.newHeader .styles_menu .styles_header .styles_network a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.newHeader .styles_menu .styles_header .styles_network>*~::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 10px;
+    background-color: #003553;
+}
+.newHeader a{
+    color: #003553;
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    
+}
+
+.newHeader .styles_menu .styles_header .styles_buttonWrapper{
+    height: 55px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.newHeader .styles_menu .styles_header .styles_buttonWrapper .styles_download .styles_btnDownload {
+    font-family: Roboto, sans-serif !important;
+    background: #ffb54a;
+    border: none;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 10px 15px;
+    gap: 6px;
+    display: flex; /* Thêm dòng này */
+    align-items: center; /* Tùy chọn: căn giữa biểu tượng và văn bản theo trục dọc */
+}
+
+.newHeader .styles_menu .styles_header .styles_buttonWrapper .styles_btnUser{
+    width: auto;
+    padding: 10px 15px;
+    border-radius: 30px;
+    border: 1px solid #00b5f1;
+    display: inline-block;
+    background: #fff;
+}
+.newHeader .styles_menu .styles_header .styles_buttonWrapper .styles_btnUser .styles_bg .styles_text{
+    min-width: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    color: #00b5f1;
+
+}
+.styles_btnAntd{
+    border: none; /* Xóa viền của button */
+    outline: none; /* Xóa outline khi button được focus */
+    background: none; /* Xóa background mặc định của button */
+    padding: 0; /* Xóa padding mặc định */
+    margin: 0; /* Xóa margin mặc định */
+    display: flex; /* Đảm bảo nội dung button căn chỉnh hợp lý */
+    align-items: center; /* Căn giữa nội dung theo chiều dọc */
+    justify-content: center /* Căn giữa nội dung theo chiều ngang */
+}
+
+.newHeader .styles_menu .styles_header::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100vw;
+    height: 1px;
+    background: #e4e4e4;
+}
+
+.newHeader .styles_menu .styles_body{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.newHeader .styles_menu .styles_body .styles_support{
+    display: flex;
+    padding-left: 20px;
+    min-width: 200px;
+    gap: 13px;
+
+}
+.styles_iconCall{
+    padding-top: -1.5px;
+}
+.newHeader .styles_menu .styles_body .styles_support .styles_titleSupport{
+    font-family: Roboto, sans-serif !important;
+    font-size: 16px;
+    color: #003553;
+    font-weight: 600;
+    line-height: 0.75px;
+    padding: 3.5px;
+    padding-left: 0px;
+}
+.newHeader .styles_menu .styles_body .styles_support .styles_titleSupport p{
+    font-family: Roboto, sans-serif !important;
+    margin-bottom: 0;
+    font-size: 25px;
+    font-weight: 700;
+    color: #ffb54a;
+    /* line-height: 29.3px; */
+}
+.newHeader .styles_menu .styles_body .styles_nvarbar{
+    width: 100%;
+}
+
+.newHeader .styles_menu .styles_body .styles_nvarbar>ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none ;
+}
+.newHeader .styles_menu .styles_body .styles_nvarbar>ul .styles_item{
+    position: relative;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+.newHeader .styles_menu .styles_body .styles_nvarbar>ul .styles_item a{
+    font-family: Roboto, sans-serif !important;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    box-sizing: border-box;
+}
+
+.newHeader .styles_menu .styles_body .styles_nvarbar>ul .styles_item .styles_icon{
+    display: flex;
+    align-items: center;
+}
+.newHeader .styles_menu .styles_body .styles_nvarbar>ul .styles_item>div{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    opacity: 1;
+    transform: translateY(25px);
+    transition: all .3s ease-out;
+    pointer-events: none;
+     /* Đặt lại vị trí của div */
+    pointer-events: auto;
+    visibility: hidden;
+}
+.newHeader .styles_menu .styles_body .styles_nvarbar>ul .styles_item:hover>div {
+    opacity: 1; /* Hiển thị menu con khi di chuột vào */
+    visibility: visible; /* Đặt lại hiển thị */
+    transform: translateY(0); /* Đặt lại vị trí */
+    pointer-events: auto; 
+   /* Kích hoạt sự kiện chuột */
+}
+.newHeader .styles_menu .styles_body .styles_nvarbar>ul .styles_item>div>ul {
+    list-style: none;
+    margin-top: 6px;
+    width: 200px;
+    border-radius: 8px;
+    box-shadow:0 1px 7px 1px rgba(0,0,0,.05);
+    overflow: hidden;
+    backdrop-filter: blur(15px)!important;
+    background-color: hsla(0, 0%, 100%, .8);
+    
+}
+.newHeader .styles_menu .styles_body .styles_nvarbar>ul .styles_item>div>ul>a{
+    color: #003553;
+}
+
+
+.newHeader .styles_menu .styles_body .styles_nvarbar>ul .styles_item>a:hover {
+    color: #4ba8dd; /* Màu chữ khi di chuột vào */
+  
+}
+
+
+
+.newHeader .styles_menu .styles_body .styles_nvarbar>ul .styles_item>div>ul>a>li{
+    position: relative;
+    font-family: Roboto, sans-serif !important;
+    width: 100%;
+    padding: 12px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.confirmLogout {
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    margin-left: 138px;
+    margin-top: 133px;
+    border: 1px solid #00b5f1;
+    border-radius: 15px;
+    margin-bottom: -311px;
+}
+
+.confirmLogout p {
+    margin: 0 0 10px;
+}
+
+.confirmLogout button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+.confirmLogout {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  width: 250pxpx;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu__items {
+  margin: 15px 0;
+}
+
+.menu__item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.menu__item svg {
+  margin-right: 8px;
+  font-size: 18px;
+  color: #007bff;
+}
+
+.confirmLogout p {
+  margin: 15px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Khoảng cách giữa hai nút */
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button svg {
+  margin-right: 3px;
+  font-size: 16px;
+}
+
+.logout-button {
+  background-color: #ff4d4f;
+  color: #fff;
+}
+
+.logout-button:hover {
+  background-color: #ff7875;
+}
+
+.cancel-button {
+  background-color: #f0f0f0;
+  color: #555;
+}
+
+.cancel-button:hover {
+  background-color: #d9d9d9;
+}
+.menu__item:hover {
+     /* Màu nền khi hover */
+    color: #007bff;  /* Màu chữ khi hover */
+  }

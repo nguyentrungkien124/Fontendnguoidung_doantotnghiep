@@ -1,0 +1,1153 @@
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+.styles_bodys{
+    margin-top: 140px;
+    background: #e8f2f7;
+    min-height: 65vh;
+    color: #003553;
+}
+.index-main{
+    width: 100%;
+    background: #fff;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, sans-serif !important;
+}
+.index-main .index-header{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    height: 35vw;
+    width: 100%;
+    margin-bottom: 85px;
+}
+.styles_bannerHeader {
+    width: 100%;
+    max-width:1980px;
+    height: 100%;
+    aspect-ratio :3.14022989;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-position: 50%; */
+    background-image: url(https://cdn.medpro.vn/prod-partner/92b6d682-4b5a-4c94-ac54-97a077c0c6c5-homepage_banner.webp);
+    /* position: relative; */
+}
+/* .styles_bannerHeader {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
+} */
+.styles_bannerHeader .styles_container{
+    max-width: 1180px;
+    margin: auto;
+}
+.styles_bannerHeader .styles_contentLeft{
+    padding: 95px 0px;
+}
+.styles_bannerHeader .styles_contentLeft .styles_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+.styles_bannerHeader .styles_contentLeft .styles_tag{
+    color: #11a2f3;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 8px;
+}
+.styles_bannerHeader .styles_contentLeft .styles_title{
+    font-size: 36px;
+    color: #003553;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    display: block;
+   
+ 
+    /* font-family: Montserrat !important; */
+    text-shadow: 0 4px 4px rgba(104,125,199,.2)
+}
+.styles_searchInputCustom{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.styles_searchInputCustom .styles_inputPopover{
+    position: relative;
+    width: 65.5%;
+}
+.styles_searchInputCustom .ant-input{
+    height: 60px;
+    border-radius: 30px;
+    padding: 11px 20px;
+    align-items: center;
+    border: none;
+    box-shadow: 4px 8px 30px 0 rgba(177,196,218,.35);
+}
+.ant-input::before{
+    width: 0;
+    visibility: hidden;
+    content: "\a0";
+}
+.ant-i{
+    margin-right: 4px;
+    font-size: 12px;
+}
+.ant-input>input.ant-inputs{
+    padding: 0;
+    border: none;
+    outline: none;
+}
+.ant-input{
+    width: 100%;
+    position: relative;
+    min-width: 0;
+    color: rgb(0, 0, 0, .85);
+    font-size: 14px;
+    line-height: 1.5715;
+    background-color: #fff;
+    background-image: none;
+    transition: all 3s;
+    display: inline-flex;
+}
+.styles_searchInputCustom .styles_inputPopover input{
+    font-size: 20px;
+     color:#B1B1B1
+}
+.styles_bannerHeader .styles_contentLeft .styles_desc{
+    color: #003553;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+
+/* phần 2 */
+.index-main .index-header .index_service{
+    width: 100%;
+    /* max-width: 1225px; */
+    /* max-width: 1225px; */
+    margin-top: -6%;
+}
+.styles_serviceHeader{
+   max-width: 1225px;
+    margin: auto;
+}
+
+.ant-carousel{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,.85);
+    font-size: 14px;
+    line-height: 1.5715;
+    list-style: none;
+}
+.ant-carousel .slick-slider{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+.ant-carousel .slick-list{
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.slick-track{
+    width: 1400px;
+    opacity: 1;
+    transform: translate3d(0px,0px,0px)
+}
+
+.styles_serviceHeader .styles_item .styles_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    position: relative;
+    padding: 18px 17px 16px;
+    text-align: center;
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid transparent;
+    transition:  all .15s;
+    cursor: pointer;
+    box-shadow: 4px 8px 30px 0 #bcd9fb59;
+}
+
+.styles_serviceHeader .styles_item .styles_title{
+    margin-top: 8px;
+    margin-bottom: 0;
+    color: #003553;
+    font-family: Roboto!important;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.ant-carousel .slick-active{
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+.ant-carousel .slick-next{
+    position: absolute;
+    top: 50%;
+    left: 1203px;
+    width: 20px;
+    height: 20px;
+    margin-top: 9px;
+    padding: 0;
+    line-height: 0;
+    border: 0;
+    cursor: pointer;
+    
+}
+.ant-carousel .slick-prev{
+    position: absolute;
+    top: 50%;
+    right: 1200px;  
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    padding: 0;
+    line-height: 0;
+    border: 0;
+    cursor: pointer;
+    background: #fff !important;
+    border-radius: 50%;
+    width: 35px !important;
+    height: 35px !important;
+    
+}
+
+.slick-next{
+    position: absolute;
+    top: 50% !important;
+    transform: translateY(-50%);
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: 50%;
+    background: #fff !important;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, .04), 0 2px 6px 0 rgba(0, 0, 0, .04), 0 10px 20px 0 rgba(0, 0, 0, .04);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+
+}
+/* phần 3 */
+
+.index-main .index_homeContainer{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.styles_Cooperated{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+.styles_Cooperated .styles_Cooperated_1 .styles_headline_title{
+    font-family: Roboto!important;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32.81px;
+    text-align: center;
+    color: #003553;
+    display: flex;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+.styles_Cooperated .styles_Cooperated_2{
+    max-width: 1058px;
+}
+
+.styles_Cooperated .styles_Cooperated_2 .styles_content_carousel{
+    margin-top: 14px;
+}
+
+.styles_Cooperated .styles_Cooperated_2 .styles_content_carousel .slick-track{
+    display: flex;
+}
+
+.ant-carousel .slick-track{
+    position: relative;
+    top: 0;
+    left: 14px;
+    display: block;
+}
+/* .slick-slide{
+    transition: right 0.5s ease-in-out;
+} */
+.ant-carousel .slick-slide{
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    transition: left 0.5s ease-in-out;
+    /* display: none; */
+}
+
+.styles_Cooperated .styles_Cooperated_2 .styles_content_carousel .slick-track .slick-slide{
+    display: flex;
+    width: 180px;
+    justify-content: center;
+}
+.styles_Cooperated .styles_Cooperated_2 .styles_carousel_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    height: 100%;
+    width: 100%;
+
+}
+.styles_Cooperated .styles_Cooperated_2 .styles_carousel_item .styles_carousel_item_image{
+    overflow: hidden;
+}
+
+.styles_Cooperated .styles_Cooperated_2 .styles_carousel_item .styles_carousel_item_name{
+    white-space: wrap;
+    font-family: Roboto !important;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: center;
+    color: #003553;
+    margin: 0;
+}
+/* ---- */
+
+.styles_CarouselBanner{
+    margin: 30px 0px 15px;
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    width: 100%; /* Đảm bảo phần này chiếm toàn bộ chiều rộng của khung chứa */
+    overflow: hidden; /* Ẩn các phần bên ngoài khung chứa nếu cần */
+    position: relative;
+}
+.styles_CarouselDestop{
+    width: 100%;
+    max-width: 1200px; /* Đặt chiều rộng tối đa nếu cần */
+    margin: 0 auto; /* Căn giữa phần carousel trong khung chứa */
+    display: flex;
+}
+.ant-carousel .slick-slide{
+    display: block;
+}
+.slick-prev1,
+.slick-next1 {
+    display: none !important;
+}
+.index_Rectangle{
+    background: linear-gradient(180deg, #fff, #ebf2ff);
+    height: 20px;
+    /* width: ; */
+}
+
+
+/* cơ sở y tế khám nhiều nhất */
+.index-main-ecomerce{
+    width: 100%;
+    background: #e8f4fd;
+    padding-bottom: 0;
+    font-family: Roboto, sans-serif !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.index-main-ecomerce .index_ecomerce{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.styles_NewPackageMonth{
+    margin-bottom: 50px;
+}
+.styles_NewPackageMonth .styles_PackageMonthHeader{
+    margin-bottom: 8px;
+}
+.styles_NewPackageMonth .styles_PackageMonthHeader .styles_PackageMonthHeaderTitle h2{
+    text-transform: uppercase;
+    margin-bottom: 0;
+    /* font-family: R; */
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32.81px;
+    text-align: center;
+    color: #003553;
+}
+.styles_NewPackageMonth .styles_BodyCardPackageMonth{
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+.styles_NewPackageMonth .styles_BodyCardPackageMonth .ant-carousel .slick-slider .slick-list .slick-track{
+    padding: 24px 0;
+    height: max-content;
+}
+.styles_NewPackageMonth .styles_BodyCardPackageMonth .ant-carousel .slick-slider .slick-list .slick-track .slick-slide{
+    display: flex;
+    justify-content: center;
+}
+.styles_DetailPackageMonth{
+    background: #fff;
+    box-shadow: 0 4.5px 13px #01499e59;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow .3s ease-in;
+    border-radius: 12px;
+    overflow: hidden;
+    min-width: 277px;
+    max-width: 277px;
+    height: 100%;
+    padding: 12px;
+}
+
+.styles_DetailPackageMonth .styles_DetailCard{
+    background: #fff;
+}
+
+.styles_DetailPackageMonth .styles_DetailCard .styles_DetailCardTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 8px 0 0;
+}
+.styles_DetailPackageMonth .styles_DetailCard .styles_DetailCardTitle h2{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.44px;
+    text-align: left;
+    color: #003553;
+    margin-bottom: 0;
+    height: 46px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-family: Roboto !important;
+}
+.styles_DetailPackageMonth .styles_DetailCard .styles_DetailCardTitle .styles_address{
+    height: 37.5px;
+    font-family: Roboto !important;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: left;
+    color: #003553;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.styles_DetailPackageMonth .styles_DetailCard .styles_DetailCardTitle .styles_CardContentBodyRate{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    height: 16px;
+
+}
+.styles_DetailPackageMonth .styles_DetailCard .styles_DetailCardTitle .styles_CardContentBodyRate .styles_textRate{
+    font-family: Roboto !important;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    text-align: left;
+    color: #ffb54a;
+}
+.styles_DetailPackageMonth .styles_DetailCard .styles_DetailCardTitle .styles_CardContentBodyRate .styles_Rate{
+    font-size: 18px;
+    margin-left: 4px;
+    color: #ffb54a;
+    margin-top: 10px;
+}
+.styles_Rate{
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    line-height: unset;
+    list-style: none;
+    outline: none;
+}
+.ant-rate-star:not(:last-child){
+    margin-right: 8px;
+}
+.ant-rate-star{
+    position: relative;
+    display: inline-block;
+    color: inheritdiv;
+}
+
+
+.ant-rate-star>div{
+    transition: all .3s,outline 0s;
+}
+
+.ant-rate-star-first {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%; /* Có thể thay đổi thành 100% nếu muốn hiển thị toàn bộ ngôi sao */
+    height: 100%;
+    overflow: hidden;
+    opacity: 1; /* Thay đổi từ 0 thành 1 để hiển thị */
+    transition: all .3s;
+}
+
+.anticon{
+    display: inline-block;
+    color: #ffb54a;
+    font-style: normal;
+    line-height: 0;
+    text-align: center;
+    text-transform: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing:antialiased;
+}
+.styles_Rate .ant-rate-star{
+    cursor: default;
+}
+.styles_DetailCardTitle .styles_PackageMonthButton{
+    width: 100%;
+    margin-top: 4px;
+    border: 1px solid transparent;
+    background-color: #00b5f1;
+    border-radius: 8px;
+    padding: 8px 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18.75px;
+    height: fit-content;
+}
+
+
+/* button */
+.styles_NewPackageMonth .styles_BodyCardPackageMonth .ant-carousel .slick-slider .slick-prev{
+    left: -45px;
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.styles_NewDoctorTelemed .styles_BodyCardDoctorTelemed .ant-carousel .slick-slider .slick-prev{
+    left: -45px;
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.styles_NewPackageMonth .styles_BodyCardPackageMonth .ant-carousel .slick-slider .slick-next{
+    right: -45px;
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.styles_NewPackageMonth .styles_NextButton ,.styles_NewDoctorTelemed .styles_NextButton{
+    margin: 20px auto 0;
+    display: flex;
+    gap: 8px;
+    border: 1px solid transparent;
+    background-color:  #e8f4fd;
+}
+.styles_NewPackageMonth .styles_NextButton p ,.styles_NewDoctorTelemed .styles_NextButton p{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 6px;
+    text-align: center;
+    color: #00b5f1;
+    margin-bottom: 12px;
+    /* width: px; */
+}
+
+.styles_NewPackageMonth .styles_NextButton:hover ,.styles_NewDoctorTelemed .styles_NextButton:hover, .styles_NewBookingPackage .styles_NextButton:hover{
+    border-radius: 8px;
+    border-color: #00b5f1;
+    background-color: transparent;
+}z
+/* button .styles_NextButton{
+    height: auto;
+    padding: 8px 100px;
+    font-size: 12px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* bác sĩ khám bệnh qua video */
+/* 1 */
+.styles_NewDoctorTelemed{
+    margin-bottom: 50px;
+}
+.styles_NewDoctorTelemed .styles_NewDoctorTelemedHeader{
+    margin-bottom: 8px;
+}
+.styles_NewDoctorTelemed .styles_NewDoctorTelemedHeader .styles_NewDoctorTelemedHeaderTitle h2{
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-family:sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32.81px;
+    text-align: center;
+    color: #003553;
+    margin-top: 0;
+}
+.styles_NewDoctorTelemed .styles_BodyCardDoctorTelemed{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.styles_NewDoctorTelemed .styles_BodyCardDoctorTelemed .ant-carousel{
+    width: 100%;
+}
+.styles_NewDoctorTelemed .styles_BodyCardDoctorTelemed .ant-carousel .slick-slider .slick-list .slick-track .slick-slide{
+    justify-content: center;
+    display: flex;
+}
+.styles_DetailDoctor{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow .3s ease-in;
+    border-radius: 12px;
+    box-shadow: 0 4.5px 13px #01499e59;
+    padding: 12px;
+    min-width: 277px;
+    max-width: 277px;
+    height: 100%;
+    margin-top:30px ;
+    margin-left: 20px;
+}
+
+.styles_DetailDoctor .styles_DetailDoctorCard{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 160px;
+    max-height: 160px;
+}
+.styles_DetailDoctor .styles_DetailDoctorCard .styles_DetailDoctorCardImage{
+    border-radius: 12px;
+    min-height: 130px;
+    max-height: 130px;
+    width: 100%;
+    max-width: 130px;
+}
+.styles_DetailDoctor .styles_DetailDoctorCard .styles_DetailDoctorCardImage span ,.styles_DetailDoctor .styles_DetailDoctorCard .styles_DetailDoctorCardImage img{
+    width: 130px;
+    height: 130px;
+    min-height: 130px;
+    max-height: 130px;
+    border-radius: 50%;
+}
+/* 2 */
+.styles_DetailDoctor .styles_DetailDoctorTelemedCardContent .styles_CardContentBodyEvaluate{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ebf9fd;
+    padding: 0px 12px;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.styles_DetailDoctor .styles_DetailDoctorTelemedCardContent .styles_CardContentBodyEvaluate .styles_item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    /* margin-bottom:; */
+}
+.styles_DetailDoctor .styles_DetailDoctorTelemedCardContent .styles_CardContentBodyEvaluate .styles_item label{
+    font-family: sans-serif;
+    font-size: 12.53px;
+    font-weight: 600;
+    line-height: 14.68px;
+    text-align: left;
+    color: #003553;
+}
+
+.styles_DetailDoctor .styles_DetailDoctorTelemedCardContent .styles_CardContentBodyEvaluate .styles_item span{
+    font-family: sans-serif;
+    font-size: 15.03px;
+    font-weight: 500;
+    line-height: 17.62px;
+    text-align: left;
+    color: #ffb54a;
+}
+.styles_DetailDoctor .styles_DetailDoctorTelemedCardContent .styles_CardContentHeader{
+    margin-top: 12px;
+}
+.styles_DetailDoctor .styles_DetailDoctorTelemedCardContent .styles_CardContentHeader .styles_role{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.44px;
+    text-align: left;
+    color: #003553;
+    margin-bottom: 0;
+}
+.styles_DetailDoctor .styles_DetailDoctorTelemedCardContent .styles_CardContentHeader .styles_name{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23.44px;
+    text-align: left;
+    color: #003553;
+    margin-bottom: 0;
+    display: -webkit-box;
+    -webkit-line-clamp:1;
+    -webkit-box-orient:vertical ;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-top: 3px;
+}
+.styles_DetailDoctor .styles_DetailDoctorTelemedCardContent .styles_CardContentBody{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    margin-top: 12px;
+}
+.styles_DetailDoctor .styles_DetailDoctorTelemedCardContent .styles_CardContentBody .styles_CardContentBodyText{
+    gap: 4px;
+    display: flex;
+    align-items: center;    
+}
+.styles_DetailDoctor .styles_DetailDoctorTelemedCardContent .styles_CardContentBody .styles_CardContentBodyText p{
+    margin-bottom: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: left;
+    color: #003553;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-top: 0;
+}
+.styles_DetailDoctor .styles_DoctorTelemedFoorterCard{
+    background: #fff;
+    margin-top: 12px;
+    position: relative;
+}
+.styles_DetailDoctor .styles_DoctorTelemedFoorterCard .styles_DoctorTelemedButton{
+    width: 100%;
+    border: 1px solid #00b5f1;
+    border-radius: 8px;
+    background-color: #00b5f1;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 14.75px;
+}
+/* p{
+    margin-top: 0;
+} */
+ /* tiếp */
+.styles_NewBookingPackage .styles_NewBookingPackageHerder{
+    margin-bottom: 20px;
+}
+.styles_NewBookingPackage .styles_NewBookingPackageHerder .styles_NewBookingPackageHerderText h2{
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 71.81px;
+    text-align: center;
+    color: #003553;
+    margin-top: 0;
+    margin-bottom: -0.5em;
+}
+.styles_NewBookingPackage .styles_NewBookingPackageHerderButton .styles_tag{
+    list-style: none;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    overflow: auto;
+}
+.styles_NewBookingPackage .styles_NewBookingPackageHerderButton .styles_tag .styles_tagItem{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.75px;
+    text-align: center;
+    padding: 8px 16px;
+    background: transparent;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: all .15s ease;
+    text-shadow: none;
+    font-family: sans-serif;
+    color: #fff;
+}
+/* .styles_NewBookingPackage .styles_NewBookingPackageHerderButton .styles_tag .styles_tagItem .styles_active{
+    background-color: #00b5f1;
+    border-color: transparent;
+    color: #fff;
+} */
+.styles_NewBookingPackage .styles_NewBookingPackageHerderButton .styles_tag li .styles_tagItem {
+    background-color: white; /* Màu nền mặc định cho tất cả các nút */
+    border-color: transparent;
+    color: #000; /* Màu chữ mặc định */
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid transparent; /* Có thể thêm border nếu cần */
+}
+
+.styles_NewBookingPackage .styles_NewBookingPackageHerderButton .styles_tag li .styles_tagItem.styles_active {
+    background-color: #00b5f1; /* Màu nền khi nút được chọn */
+    color: #fff; /* Màu chữ khi nút được chọn */
+    border-color: #00b5f1; /* Border có thể thêm nếu cần */
+}
+/* .styles_NewBookingPackage .styles_NewBookingPackageHerderButton .styles_tag .styles_tagItem :hover{
+    border: 1px solid #00b5f1;
+} */
+/* .styles_tag :hover{
+    border: 1px solid #00b5f1;
+} */
+.styles_NewBookingPackage .styles_BodyCardPackage{
+    /* display: flex; */
+    justify-content: space-between;
+    gap: 10px;
+}
+.styles_NewBookingPackage .styles_BodyCardPackage .ant-carousel .slick-slider .slick-list .slick-track{
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    height: 100%;
+    opacity: 1;
+    transform: translate3d(0px,0px,0px);
+    width: auto;
+} 
+.styles_NewBookingPackage .styles_BodyCardPackage .ant-carousel .slick-slider .slick-list .slick-track .slick-slide{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    outline: none;
+}
+.styles_BookingPackageBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    background: #fff;
+    box-shadow: 0 4.5px 13px #01499e59;
+    border-radius: 16px;
+    min-height: 308px;
+    min-width: 277px;
+    max-width: 277px;
+    height: 100%;
+    padding: 12px;
+}
+.styles_BookingPackageBody .styles_BookingPackageBodyCard{
+    background-color: #fff;
+    border-radius: 16px 16px 0 0;
+}
+.styles_BookingPackageBody .styles_BookingPackageBodyCard .styles_BookingPackageBodyCardImage{
+    position: relative;
+    width: 277px;
+    height: 150px;
+    margin-top: -12px;
+    margin-left: -12px;
+    margin-right: -12px;
+    border-radius: 16px;
+}
+.styles_BookingPackageBody .styles_BookingPackageBodyCard .styles_img{
+    border-radius: 16px 16px 0px 0px;
+
+}
+.styles_BookingPackageBody .styles_BookingPackageBodyCard .styles_BookingPackageBodyCardContent{
+    padding: 0px;
+}
+.styles_BookingPackageBody .styles_BookingPackageBodyCard .styles_BookingPackageBodyCardContent .styles_BookingPackageName{
+    margin-top: 10px;
+}
+.styles_BookingPackageBody .styles_BookingPackageBodyCard .styles_BookingPackageBodyCardContent .styles_BookingPackageName h2{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.44px;
+    text-align: left;
+    color: #003553;
+    display: -webkit-box;
+    -webkit-line-clamp:2 ;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 46px;
+    /* margin-top: 0; */
+}
+.styles_BookingPackageBody .styles_BookingPackageBodyCard .styles_BookingPackageBodyCardContent .styles_HospitalName{
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+.styles_BookingPackageBody .styles_BookingPackageBodyCard .styles_BookingPackageBodyCardContent .styles_HospitalName .styles_name{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: left;
+    color: #003553;
+    overflow: hidden;
+    height: 37.5px;
+}
+
+.styles_BookingPackageBody .styles_BookingPackageBodyCard .styles_BookingPackageBodyCardContent .styles_BookingPackagePrice{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: -17px;
+    
+}
+.styles_BookingPackageBody .styles_BookingPackageBodyCard .styles_BookingPackageBodyCardContent .styles_BookingPackagePrice .styles_Price{
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #ffb54a;
+    line-height: 18px;
+    text-align: center;
+}
+
+.styles_BookingPackageBody .styles_BookingPackageBodyCard .styles_BookingPackageBodyCardContent .styles_BookingPackagePrice .styles_Discount{
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #858585;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: center;
+    text-decoration: line-through;
+}
+.styles_BookingPackageBody .styles_BookingPackageBodyFoorter{
+    background: #fff;
+    margin-top: 1px;
+    position: relative;
+}
+.styles_BookingPackageBody .styles_BookingPackageBodyFoorter .styles_BookingPackageButton{
+    width: 100%;
+    border: 1px solid #00b5f1;
+    border-radius: 8px;
+    background-color: #00b5f1;
+    color: #fff;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 16.75px;
+}
+.styles_NewBookingPackage .styles_NextButton{
+    margin: 8px auto 0;
+    display: flex;
+    gap: 8px;
+    border-color: transparent;
+    background-color: transparent;
+    box-shadow: none;
+}
+.styles_NewBookingPackage .styles_NextButton p{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 12px;
+    text-align: center;
+    color: #00b5f1;
+    margin-bottom: 6px;
+    
+}
+/* ----------------------------- */
+.index_Rectangle2{
+    background: linear-gradient(0deg, #fff, #ebf2ff);
+    height: 68.15px;
+}
+.index-end{
+    padding-top: 8px;
+}
+.styles_container .styles_container-medproSeo{
+    max-width: 1180px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.styles_MPSpecialistCard .styles_MPSpecialistCardTitle{
+    text-transform: uppercase;
+}
+.styles_MPSpecialistCard .styles_MPSpecialistCardTitle .styles_MPSpecialistCardTitleText{
+    font-family: sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32.81px;
+    text-align: center;
+    color: #003553;
+    
+}
+.styles_MPSpecialistCard .styles_MPSpecialistCardList{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 32px 44px;
+    margin: 32px 225px;
+    
+}
+.styles_MPSpecialistCard .styles_MPSpecialistCardList .styles_MPSpecialistCardItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+.styles_MPSpecialistCard .styles_MPSpecialistCardList .styles_MPSpecialistCardItem .styles_MPSpecialistCardItemText{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: center;
+    color: #003553;
+}
+.styles_container{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.styles_NewPackageMonth{
+    margin-top: 70px;
+}
+.styles_NewPackageMonth .styles_NewPackageMonthHeader{
+    margin-bottom: 8px;
+}
+.styles_NewPackageMonth .styles_NewPackageMonthHeader .styles_NewPackageMonthHeaderTitleText h2{
+    font-family: sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 6.81px;
+    text-align: center;
+    color: #003553;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.styles_NewPackageMonth .styles_BodyCardPackageMonth{
+    display: flex;
+    gap: 10px;
+}
+.styles_NewPackageMonth .styles_BodyCardPackageMonth .ant-carousel .slick-slider .slick-list{
+    height: 100%;
+}
+.styles_NewPackageMonth .styles_BodyCardPackageMonth .ant-carousel .slick-slider .slick-list .slick-track{
+    display: flex;
+    padding: 24px 0;
+    width: 2304px;
+    transform: translate3d(0px,0px,0px);
+
+}
+.styles_NewPackageMonth .styles_BodyCardPackageMonth .ant-carousel .slick-slider .slick-list .slick-track .slick-slide{
+    display: flex;
+    justify-content: center;
+    outline: none;
+    width: 384px;
+}
+.styles_DetailFeelPeople{
+    background: #f0f3f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow .3s;
+    border-radius: 16px;
+    overflow: hidden;
+    min-width: 360px;
+    max-width: 360px;
+    padding: 12px;
+    height: 280px;
+    box-shadow: 0 4px 12px 0 #68686840;
+    margin-left: 52px;
+}
+.styles_DetailFeelPeople .styles_DetailFeelPeopleTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.styles_DetailFeelPeople .styles_DetailFeelPeopleTitle .styles_DetailFeelPeopleTitleText{
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: center;
+  margin-top: 10px;
+  color: #003553;
+}
+.index-main .index_homeContainer{
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.styles_DetailFeelPeople .styles_DetailFeelPeopleTitle .styles_DetailFeelPeopleTitleImage{
+    width: 20px;
+    height: 24px;
+}
+.styles_DetailFeelPeople .styles_DetailFeelPeopleContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-top: 1px solid #e3e7eb;
+    padding-top: 12px;
+    margin-top: 12px;
+}
+
+.styles_DetailFeelPeople .styles_DetailFeelPeopleContent .styles_DetailFeelPeopleContentAvatar{
+    width: 40px;
+    height: 40px;
+}
+.styles_DetailFeelPeople .styles_DetailFeelPeopleContent .styles_DetailFeelPeopleContentAvatar img{
+    border-radius: 50%;
+}
+.styles_DetailFeelPeople .styles_DetailFeelPeopleContent .styles_DetailFeelPeopleName{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: center;
+    color: #003553;
+}
