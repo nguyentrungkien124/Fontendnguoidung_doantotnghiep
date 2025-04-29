@@ -12,7 +12,32 @@ import { Button, Checkbox, Form, Input, message } from 'antd';
 const Dangnhap: React.FC = () => {
   const navigate = useNavigate();
 
-  
+  const onFinish = async (values: any) => {
+    try {
+      // Gửi yêu cầu đăng nhập
+      const response = await axios.post('http://localhost:9999/api/user/login', {
+        email: values.email,
+        mat_khau: values.mat_khau,
+      });
+
+      // Kiểm tra phản hồi
+      if (response.data && response.data.token) {
+        // Lưu thông tin đăng nhập vào sessionStorage
+        sessionStorage.setItem('id',response.data.id);
+        sessionStorage.setItem('token', response.data.token); // Token
+        sessionStorage.setItem('email', response.data.email); // Tên người dùng
+        sessionStorage.setItem('ho_ten',response.data.ho_ten);
+        sessionStorage.setItem('hinh_anh',response.data.hinh_anh);
+        message.success(`Đăng nhập thành công! Chào mừng, ${response.data.ho_ten}`);
+        navigate('/');
+      } else {
+        message.error(response.data.message || 'Đăng nhập thất bại!');
+      }
+    } catch (error: any) {
+      // Xử lý lỗi
+      message.error(error.response?.data?.message || 'Đăng nhập thất bại!');
+    }
+  };
 
   return (
     <div className="form-container">
@@ -20,7 +45,7 @@ const Dangnhap: React.FC = () => {
         name="login"
         initialValues={{ remember: true }}
         style={{ maxWidth: 360 }}
-        // onFinish={onFinish}
+        onFinish={onFinish}
       >
         <Form.Item
           name="email"
