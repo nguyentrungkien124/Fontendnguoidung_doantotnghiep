@@ -13,6 +13,24 @@ interface khoa {
   }
 
 const Chuyenkhoa = function () {
+    const [specialties, setSpecialties] = useState<khoa[]>([]); 
+    const navigate = useNavigate(); // Khởi tạo useNavigate
+
+    useEffect(() => {
+        const fetchSpecialties = async () => {
+            try {
+                const response = await axios.get("http://localhost:9999/api/khoa/getall");
+                setSpecialties(response.data); // Lưu dữ liệu vào state
+            } catch (error) {
+                console.error("Lỗi khi lấy dữ liệu chuyên khoa:", error);
+            }
+        };
+
+        fetchSpecialties();
+    }, []);
+    const handleNavigate = (khoa_id: number) => {
+        navigate(`/chonBacSi?khoa_id=${khoa_id}`);
+    };
 
        
 
@@ -25,7 +43,18 @@ const Chuyenkhoa = function () {
                             <div className="styles_MPSpecialistCardTitleText">Chuyên khoa</div>
                         </div>
                         <div className="styles_MPSpecialistCardList" style={{ marginLeft: '193px' }}>
-                       
+                        {specialties.map((specialty) => (
+                                <div className="styles_MPSpecialistCardItem" key={specialty.id}
+                                onClick={() => handleNavigate(specialty.id!)}>
+                                    <div>
+                                        <span style={{ boxSizing: 'border-box', display: 'inline-block', overflow: 'hidden', width: '100px', height: '100px', background: 'none', opacity: '1', border: '0px', margin: '0px', padding: '0px', position: 'relative' }}>
+                                            <img  src={specialty.hinh_anh} alt={specialty.ten} style={{ position: 'absolute', inset: '0px', boxSizing: 'border-box', padding: '0px', border: 'none', margin: 'auto', display: 'block', width: '100%', height: '100%' }} />
+                                        </span>
+                                    </div>
+                                    <div className="styles_MPSpecialistCardItemText" >{specialty.ten}</div>
+                                </div>
+                            ))}
+
 
                         </div>
                     </div>
