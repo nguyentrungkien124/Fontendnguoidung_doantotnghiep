@@ -1,0 +1,398 @@
+.styles_news {
+    min-height: 65vh;
+    width: 100%;
+    background: #fff;
+    max-width: 1140px;
+    margin: auto;
+    padding-right: 15px;
+    padding-left: -15px;
+}
+
+.styles_newsHeaderNavbar {
+    display: flex;
+    align-items: flex-end;
+    padding: 24px 0 18px;
+    gap: 30px;
+}
+
+.styles_newsHeaderNavbar .styles_title {
+    color: #003553;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 9px;
+}
+
+
+.styles_newsHeaderNavbar .styles_desktop {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.styles_newsHeaderNavbar .styles_desktop .styles_tabItem {
+    font-size: 20px;
+    font-weight: 500;
+    color: #b1b1b1;
+    padding: 7.5px 0;
+    margin-bottom: -7px;
+    line-height: normal
+}
+
+.styles_newsHeaderNavbar .styles_desktop .styles_active .styles_tabItem {
+    font-size: 20px;
+    font-weight: 500;
+
+    background: linear-gradient(83.63deg, #00b5f1 33.34%, #00e0ff 113.91%);
+    background-clip: text;
+    margin-bottom: 4px;
+    color: transparent;
+}
+
+.styles_catePost {
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+}
+
+.styles_headerWrapper {
+    display: flex;
+}
+
+.styles_headerWrapper .styles_left {
+    transform: translateY(75px);
+    opacity: 1;
+
+}
+
+@media (min-width: 992px) {
+    .styles_left {
+        display: block;
+        flex: 0 0 62.5%;
+        max-width: 62.5%;
+    }
+}
+
+.styles_card1 {
+    transition: all .23s ease-in-out;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    margin-top: -59px;
+
+    margin-left: 6px;
+}
+
+.styles_card1 .styles_image {
+    width: 100%;
+    height: 374px;
+    max-height: 374px;
+    position: relative;
+
+}
+
+.styles_card1 .styles_categories {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 16px;
+    color: #858585;
+    font-weight: 500;
+    line-height: 18.75px;
+}
+
+.styles_card1 .styles_title {
+    font-size: 29px;
+    font-weight: 700;
+    margin-top: 14px;
+    line-height: 35.33px;
+    color: var(--prim, #003553);
+    margin-bottom: 8px;
+    margin-left: -19px;
+}
+
+.styles_card1 .styles_title:hover {
+    color: #00b5f1;
+}
+
+.styles_card1 .styles_description {
+    font-size: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 18.75px;
+    font-weight: 500;
+    margin-left: -19px;
+    color: black;
+}
+
+.styles_card1 .styles_tag {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 16px;
+    gap: 5px;
+    line-height: 18.75px;
+    margin-left: -19px;
+}
+
+.styles_card1 .styles_icon {
+    display: flex;
+    align-items: center;
+}
+
+.styles_card1 .styles_more {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #00b5f1;
+    background: linear-gradient(83.63deg, #00b5f1 33.34%, #00e0ff 113.91%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 18px;
+    line-height: 23.44px;
+    margin-left: -19px;
+}
+
+.styles_card1 .styles_more .styles_rightIcon {
+    transition: all .23s ease-in-out;
+    transform-origin: 0 0;
+    margin-top: 6px;
+}
+
+.styles_more {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* Khoảng cách giữa text và icon */
+    cursor: pointer;
+    /* Thêm hiệu ứng con trỏ */
+    position: relative;
+    /* Giữ icon tương đối với container */
+    overflow: hidden;
+}
+
+.styles_icon {
+    transition: transform 0.3s ease-in-out;
+    /* Hiệu ứng mượt */
+    display: inline-block;
+}
+
+.styles_more:hover .styles_icon {
+    animation: thoraThutvao 0.5s ease-in-out infinite;
+    /* Thò ra thụt vào */
+}
+
+@keyframes thoraThutvao {
+    0% {
+        transform: translateX(0);
+        /* Vị trí ban đầu */
+    }
+
+    50% {
+        transform: translateX(8px);
+        /* Thò ra */
+    }
+
+    100% {
+        transform: translateX(0);
+        /* Thụt lại */
+    }
+}
+
+.styles_headerWrapper .styles_right {
+    transform: translateY(-3px);
+    opacity: 1;
+
+}
+
+@media (min-width: 992px) {
+    .styles_right {
+        display: block;
+        flex: 0 0 37.5%;
+        max-width: 37.5%;
+    }
+}
+
+@media (min-width: 1023px) {
+    .styles_headerWrapper .styles_right .styles_list {
+        gap: 12px;
+    }
+}
+
+.styles_headerWrapper .styles_right .styles_list {
+    display: flex;
+    flex-direction: column;
+}
+
+.styles_cardItem {
+    border-radius: 8px;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid transparent;
+}
+
+.styles_cardItem .styles_cards {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    transition: all .19s ease-in;
+}
+
+.styles_cardItem .styles_cards .styles_image {
+    position: relative;
+    aspect-ratio: 1.6;
+    min-height: 100px;
+    min-width: 140px;
+}
+
+.styles_cardItem .styles_cards .styles_categories {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #858585;
+}
+
+.styles_cardItem .styles_cards .styles_categories .styles_icon {
+    display: flex;
+    align-items: center;
+}
+
+.styles_cardItem .styles_cards .styles_title {
+    color: #003553;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25.6px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.styles_cardItem .styles_cards .styles_tag {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 13px;
+    gap: 3px;
+}
+
+.styles_cardItem .styles_cards .styles_tag .styles_icon {
+    display: flex;
+    align-items: center;
+}
+
+.styles_cardItem .styles_cards .styles_tag>span {
+    line-height: 18px;
+    font-size: 13.5px;
+}
+
+.styles_wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Để các phần tử xuống dòng nếu vượt quá chiều rộng */
+    row-gap: 30px;  /* Khoảng cách giữa các hàng */
+    justify-content: space-between; /* Căn giữa hoặc khoảng cách giữa các item */
+}
+
+.styles_wrapper .styles_item {
+    max-width: 373px;
+}
+
+@media (min-width: 992px) {
+    .styles_item3     {
+        display: block;
+        flex:  0 0 33.33333333%;
+        /* max-width: 33.33333333%; */
+    }
+}
+
+.styles_wrapper .styles_item3 .styles_cards {
+    padding: 36px;
+    transition: all .19s ease-in;
+    border-radius: 16px;
+    border: 1px solid transparent;
+}
+
+.styles_wrapper .styles_item3 .styles_cards .styles_image {
+    position: relative;
+    aspect-ratio: 1.6;
+}
+
+.styles_wrapper .styles_item3 .styles_cards .styles_categories {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 16px;
+    margin-left: -19px;
+}
+
+.styles_wrapper .styles_item3 .styles_cards .styles_title {
+    color: #003553;
+    margin-top: 8px;
+    font-size: 20px;
+    line-height: 160%;
+    font-weight: 700;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-left: -19px;
+}
+
+.styles_wrapper .styles_item3 .styles_cards .styles_description {
+    color: #858585;
+    font-size: 16px;
+    margin-top: -26px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-left: -19px;
+}
+
+.styles_wrapper .styles_item3 .styles_cards .styles_tag {
+
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 13.5px;
+    gap: 3px;
+    margin-left: -19px;
+    color: black;
+}
+.styles_wrapper .styles_item3 .styles_cards .styles_more {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    color: #00b5f1;
+    font-size: 16px;
+    font-weight: 500;
+    background: linear-gradient(83.63deg, #00b5f1 33.34%, #00e0ff 113.91%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    gap: 6px;
+    margin-left: -19px;
+}
+
+.styles_wrapper .styles_item3 .styles_cards .styles_more .styles_rightIcon{
+    display: flex;
+    align-items: center;
+}
+
+.styles_active {
+    background-color: #d5dfeb; /* Màu xanh cho phần tử đang được chọn */
+    color: white; /* Đổi màu chữ cho dễ đọc */
+    border-radius: 5px; /* Thêm bo góc nếu cần */
+}
